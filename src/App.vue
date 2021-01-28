@@ -13,7 +13,10 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+html {
+  font-family: arial,sans-serif;
+}
 body {
   margin: 0;
 }
