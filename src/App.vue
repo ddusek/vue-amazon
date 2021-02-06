@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import Header from './components/Header.vue'
+import Header from './components/header/Header.vue'
 
 export default {
   name: 'App',
@@ -16,6 +16,10 @@ export default {
 <style lang="scss">
 html {
   font-family: arial,sans-serif;
+    a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 body {
   margin: 0;
