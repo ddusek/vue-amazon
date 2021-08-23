@@ -49,40 +49,42 @@ export default {
 </script>
 
 <style lang="scss">
+textarea,
 .navbar__fill {
   width: 100%;
   display: flex;
   margin: 12px 5px;
   &__form {
+    display: flex;
     width: 100%;
     &__dropdown {
       height: 100%;
+      width: auto;
       border: 0;
       border-radius: 5px 0 0 5px;
-      flex-grow: 1;
     }
     &__container {
-      flex-grow: 2;
-      width: auto;
+      min-width: 200px;
+      height: 100%;
+      width: 100%;
       &__textbox {
+        flex: 1;
         height: 100%;
         border: none;
         padding: 0;
+        width: 100%;
       }
     }
 
     &__search {
       background: url("../../assets/search.png");
-      position: static;
-      width: auto;
-      height: auto;
-      flex-grow: 1;
-
       &__button {
         height: 100%;
         border: 0;
         border-radius: 0 5px 5px 0;
+        background-color: #febd69;
       }
+      margin-left: auto;
     }
   }
 }
