@@ -1,11 +1,9 @@
 <template>
   <div class="navbar__left">
-    <span class="navbar__left__logo">
-      <a href="/">
-        <img src="../../assets/logo.png" />
-      </a>
-    </span>
-    <a href="#" class="navbar__left__delivery">
+    <a class="navbar__left__logo navbar-hover" href="/">
+      <img src="../../assets/logo.png" />
+    </a>
+    <a href="#" class="navbar__left__delivery navbar-hover">
       <img
         src="../../assets/location.png"
         class="navbar__left__delivery__location"
@@ -26,9 +24,9 @@ export default {};
 .navbar__left {
   display: flex;
   align-items: center;
-
+  height: 100%;
   &__logo {
-    margin: 10px 20px 0 17px;
+    padding: 10px 20px 0 17px;
   }
 
   &__delivery {
@@ -37,7 +35,7 @@ export default {};
     &__location {
       height: 17px;
       width: 16px;
-      margin-top: 10px;
+      padding-top: 10px;
       padding-right: 2px;
     }
 

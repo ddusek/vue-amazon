@@ -20,11 +20,18 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .navbar {
   display: flex;
   background-color: rgb(25, 25, 25);
   color: white;
   height: 60px;
+}
+.navbar-hover {
+  border: 1px solid transparent;
+  cursor: pointer;
+  &:hover {
+    border: #ffffff solid 1px;
+  }
 }
 </style>

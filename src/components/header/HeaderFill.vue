@@ -62,6 +62,9 @@ textarea,
       width: auto;
       border: 0;
       border-radius: 5px 0 0 5px;
+      &:hover {
+        cursor: pointer;
+      }
     }
     &__container {
       min-width: 200px;
@@ -83,6 +86,9 @@ textarea,
         border: 0;
         border-radius: 0 5px 5px 0;
         background-color: #febd69;
+        &:hover {
+          cursor: pointer;
+        }
       }
       margin-left: auto;
     }
