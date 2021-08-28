@@ -2,10 +2,22 @@
   <div class="navbar__right navbar__right__hover">
     <a class="navbar__right__lang navbar-hover">
       <img class="navbar__right__lang__img" src="../../assets/us-flag.png" />
+      <img
+        class="navbar__right__lang__arrow"
+        src="../../assets/arrow-down-fill.png"
+        alt="arrow"
+      />
     </a>
     <a class="navbar__right__acc navbar-hover">
       <span class="navbar__right__acc--top">Hello, Sign in</span>
-      <span class="navbar__right__acc--bot">Account & Lists</span>
+      <span class="navbar__right__acc--bot"
+        >Account & Lists
+        <img
+          class="navbar__right__acc--bot__arrow"
+          src="../../assets/arrow-down-fill.png"
+          alt="arrow"
+        />
+      </span>
     </a>
     <a class="navbar__right__orders navbar-hover">
       <span class="navbar__right__orders--top">Returns</span>
@@ -39,11 +51,18 @@ export default {};
     display: flex;
     align-content: center;
     &__img {
-      margin: 27px 15px 16px 15px;
+      margin: 27px 5px 16px 15px;
+    }
+    &__arrow {
+      width: 7px;
+      height: 4px;
+      display: flex;
+      align-self: flex-end;
+      margin: 0 10px 18px 0;
     }
   }
   &__acc {
-    width: 120px;
+    width: 125px;
     display: flex;
     flex-direction: column;
     padding: 15px 0;
@@ -53,6 +72,11 @@ export default {};
     &--bot {
       font-size: 14px;
       font-weight: 600;
+      &__arrow {
+        width: 7px;
+        height: 4px;
+        margin: 0 2px 0 0;
+      }
     }
   }
   &__orders {
